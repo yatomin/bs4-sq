@@ -12,3 +12,4 @@ df = pd.read_sql('SELECT * FROM brands', conn)
 print(df)
 
 cur.close()
+conn.close()
