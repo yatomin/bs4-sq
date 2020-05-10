@@ -15,5 +15,5 @@ cur.close()
 conn.close()
 
 
-df.sort(columns='market')
-print(df)
+df_s = df.sort_values('market', ascending=False)
+print(df_s)
