@@ -13,3 +13,7 @@ print(df)
 
 cur.close()
 conn.close()
+
+
+df.sort(columns='market')
+print(df)
