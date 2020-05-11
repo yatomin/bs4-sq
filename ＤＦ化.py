@@ -23,5 +23,5 @@ df_a = pd.concat([df_d,df_r3],axis =1)
 df_v =df_a[df.values == '東証１']
 df_s1 = df_v[int(df_v['volume']) > 100]
 #print(df_v)
-print(type(df_v['volume']))
+print(df_s1)
 #df_v.to_csv(now.strftime("%Y_%m_%d")+ ".csv",encoding="utf-8-sig")
