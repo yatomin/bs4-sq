@@ -1,8 +1,10 @@
 def write_sq():
+    #df作成
     now = datetime.datetime.now()
     df = pd.read_csv(now.strftime("%Y_%m_%d")+ ".csv")
     df1 =df.drop(columns = df.columns[[0,1]])
     df_new = df1.rename(columns={'取引値.1': '取引数字','前日比.1': '前日比パ','5日平均比出来高急増率': '五日'})
+    #書き込みのコード
     conn = sqlite3.connect('管理君.db')
     c = conn.cursor()
     # データ追加(レコード登録)順位              
