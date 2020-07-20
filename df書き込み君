@@ -1,3 +1,11 @@
+import datetime
+import schedule
+import time
+import pandas as pd
+import numpy as np
+import sqlite3
+import requests
+
 def write_sq():
     #df作成
     now = datetime.datetime.now()
