@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Aug  6 11:13:00 2020
-
-@author: fukam
 """
 import schedule
 import time
